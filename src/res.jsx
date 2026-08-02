@@ -165,8 +165,6 @@ export default function Resume() {
             <div className="grid grid-cols-2 gap-4">
               {[
                 ['3+', 'Projects built'],
-                ['3+', 'Certifications'],
-                ['3', 'Technical events'],
                 ['9.4/10', 'CGPA'],
               ].map(([value, label]) => (
                 <div key={label} className="rounded-3xl border border-[#ff6a3d]/40 bg-white/5 p-5 text-center md:p-7">
@@ -349,8 +347,8 @@ export default function Resume() {
           <div className="grid gap-12 lg:grid-cols-[0.9fr_1.1fr]">
             <div>
               <h2 className="text-4xl font-black tracking-tight text-white md:text-5xl">Contact</h2>
-              <p className="mt-3 text-xl font-semibold text-[#ff6a3d]">Let&apos;s build something amazing together</p>
-              <p className="mt-6 max-w-xl leading-7 text-white/80">Whether you&apos;re looking for a collaborator, intern, or just want to talk AI — I&apos;m always open. Drop a message and I&apos;ll get back within 24 hours.</p>
+              <p className="mt-3 text-xl font-semibold text-[#ff6a3d]">Let&apos;s connect and create something meaningful</p>
+              <p className="mt-6 max-w-xl leading-7 text-white/80">I’m open to internships and exciting projects in software development and AI/ML. Feel free to reach out — I’d love to hear from you.</p>
               <div className="mt-8 space-y-4">
                 <a href="mailto:preethampaduru@gmail.com" className="contact-detail flex items-center gap-4 rounded-2xl bg-white/5 p-4"><Mail className="text-[#ff6a3d]" size={20} /><div><div className="text-sm font-bold text-white">Email</div><div className="text-sm text-white/70">preethampaduru@gmail.com</div></div></a>
                 <div className="contact-detail flex items-center gap-4 rounded-2xl bg-white/5 p-4"><MapPin className="text-[#ff6a3d]" size={20} /><div><div className="text-sm font-bold text-white">Location</div><div className="text-sm text-white/70">Hyderabad, Telangana</div></div></div>
