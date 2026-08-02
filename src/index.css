@@ -1,0 +1,254 @@
+@import "tailwindcss";
+
+:root {
+  color: #1a1a2e;
+  background: #f7f7fb;
+  font-family: Inter, "Segoe UI", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background: #f4f1eb;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+.resume-main h1,
+.resume-main h2,
+.resume-main h3 {
+  font-family: Inter, "Segoe UI", sans-serif;
+  letter-spacing: -0.035em;
+  line-height: 1.1;
+}
+
+/* Each portfolio block gets a distinct soft background, so the page reads in
+   clear sections without repeating the purple palette from the reference. */
+.resume-section:not(.resume-hero) {
+  --section-ink: #20264b;
+  --section-muted: #596487;
+  --section-accent: #635bdb;
+  --section-surface: rgba(255, 255, 255, 0.62);
+  --section-line: rgba(82, 74, 186, 0.16);
+  border: 0;
+  box-shadow: none;
+}
+
+.section-sage { background: #f7f8ff; }
+.section-apricot {
+  --section-ink: #20264b !important;
+  --section-muted: #596487 !important;
+  --section-accent: #635bdb !important;
+  --section-line: rgba(82, 74, 186, 0.16) !important;
+  background: #e8edff;
+}
+
+.section-about {
+  --section-ink: #202348 !important;
+  --section-muted: #555b84 !important;
+  --section-accent: #6957df !important;
+  --section-line: rgba(91, 76, 204, 0.2) !important;
+  --section-surface: rgba(255, 255, 255, 0.52) !important;
+  background: linear-gradient(135deg, #e8efff 0%, #eee8ff 100%);
+}
+.section-sky {
+  --section-ink: #20264b !important;
+  --section-muted: #596487 !important;
+  --section-accent: #635bdb !important;
+  --section-line: rgba(82, 74, 186, 0.16) !important;
+  background: #f7f8ff;
+}
+.section-rose {
+  --section-ink: #20264b !important;
+  --section-muted: #596487 !important;
+  --section-accent: #635bdb !important;
+  --section-line: rgba(82, 74, 186, 0.16) !important;
+  background: #eeeaff;
+}
+
+/* Full-width alternating bands, with the content aligned to the same grid as
+   the header.  These intentionally have no rounded outer edge or shadow. */
+.resume-main {
+  overflow: hidden;
+}
+
+.resume-section {
+  margin-top: 0 !important;
+  border-radius: 0 !important;
+  padding-top: 4.5rem !important;
+  padding-bottom: 4.5rem !important;
+  padding-inline: max(1.5rem, calc((100vw - 80rem) / 2 + 2.5rem)) !important;
+}
+
+.resume-paired {
+  display: block;
+}
+
+.resume-section.resume-hero {
+  border: 0 !important;
+  background-color: #fcfdff !important;
+  background-image: radial-gradient(circle, rgba(99, 91, 219, 0.18) 1px, transparent 1px) !important;
+  background-size: 26px 26px !important;
+  box-shadow: none;
+}
+
+.resume-hero .text-white,
+.resume-hero .text-white\/80,
+.resume-hero .text-white\/70 {
+  color: #172033 !important;
+}
+
+.resume-hero .border-white\/10 {
+  border-color: #e2e8f0 !important;
+}
+
+.resume-hero .bg-white\/5 {
+  background-color: #f8fafc !important;
+}
+
+.availability-badge {
+  border-color: rgba(99, 91, 219, 0.28);
+  background: rgba(238, 234, 255, 0.8);
+  color: #5646d8 !important;
+}
+
+.hero-name {
+  color: #111a31 !important;
+  letter-spacing: -0.06em !important;
+}
+
+.hero-name-gradient {
+  background: linear-gradient(100deg, #2563eb, #7c3aed 50%, #d946a6);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent !important;
+}
+
+.resume-hero .text-\[\#ff6a3d\] {
+  color: #5546db !important;
+}
+
+.resume-main > footer {
+  margin-top: 0 !important;
+  padding: 2rem max(1.5rem, calc((100vw - 80rem) / 2 + 2.5rem));
+}
+
+.interactive-button:hover {
+  color: #ffffff !important;
+  border-color: transparent !important;
+  background: linear-gradient(135deg, #2563eb, #7c3aed) !important;
+  box-shadow: 0 8px 18px rgba(79, 70, 229, 0.24);
+  transform: translateY(-1px);
+}
+
+.skill-card:hover {
+  color: #ffffff !important;
+  border-color: transparent !important;
+  background: linear-gradient(135deg, #2563eb, #7c3aed) !important;
+  box-shadow: 0 10px 22px rgba(79, 70, 229, 0.2);
+}
+
+.contact-detail {
+  border: 1px solid transparent;
+  transition: border-color 180ms ease, transform 180ms ease;
+}
+
+.contact-detail:hover {
+  border-color: rgba(99, 91, 219, 0.42);
+  transform: translateX(4px);
+}
+
+.contact-field {
+  display: grid;
+  gap: 0.45rem;
+  color: var(--section-ink);
+  font-size: 0.875rem;
+  font-weight: 700;
+}
+
+.contact-field input,
+.contact-field textarea {
+  width: 100%;
+  border: 1px solid var(--section-line);
+  border-radius: 0.75rem;
+  background: rgba(255, 255, 255, 0.7);
+  color: var(--section-ink);
+  font: inherit;
+  font-weight: 400;
+  outline: none;
+  padding: 0.75rem 0.9rem;
+  transition: border-color 180ms ease, box-shadow 180ms ease;
+}
+
+.contact-field textarea {
+  resize: vertical;
+}
+
+.contact-field input:focus,
+.contact-field textarea:focus {
+  border-color: #635bdb;
+  box-shadow: 0 0 0 3px rgba(99, 91, 219, 0.14);
+}
+
+.contact-field span {
+  color: #c43e56;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.site-footer {
+  border-top: 0 !important;
+  background: #eeeaff;
+  color: #596487 !important;
+}
+
+@media (max-width: 640px) {
+  .resume-section {
+    padding-top: 3.5rem !important;
+    padding-bottom: 3.5rem !important;
+  }
+}
+
+/* Re-map the existing utility-based content colours within light sections. */
+.resume-section:not(.resume-hero) .text-white,
+.resume-section:not(.resume-hero) .text-white\/80,
+.resume-section:not(.resume-hero) .text-white\/85 { color: var(--section-ink) !important; }
+.resume-section:not(.resume-hero) .text-white\/70,
+.resume-section:not(.resume-hero) .text-white\/75,
+.resume-section:not(.resume-hero) .text-white\/60,
+.resume-section:not(.resume-hero) .text-white\/50 { color: var(--section-muted) !important; }
+.resume-section:not(.resume-hero) .text-\[\#ff6a3d\],
+.resume-section:not(.resume-hero) .text-\[\#ff9b6a\] { color: var(--section-accent) !important; }
+.resume-section:not(.resume-hero) .bg-white\/5,
+.resume-section:not(.resume-hero) .bg-white\/10 { background-color: var(--section-surface) !important; }
+.resume-section:not(.resume-hero) .border-white\/10,
+.resume-section:not(.resume-hero) .border-white\/20 { border-color: var(--section-line) !important; }
+.resume-section:not(.resume-hero) .border-\[\#ff6a3d\] { border-color: var(--section-accent) !important; }
+.resume-section:not(.resume-hero) .border-\[\#ff6a3d\]\/40 { border-color: color-mix(in srgb, var(--section-accent) 45%, transparent) !important; }
+.resume-section:not(.resume-hero) .bg-\[\#ff6a3d\]\/10,
+.resume-section:not(.resume-hero) .bg-\[\#ff6a3d\]\/15 { background-color: color-mix(in srgb, var(--section-accent) 12%, transparent) !important; }
+.resume-section:not(.resume-hero) .bg-\[linear-gradient\(135deg\,\#17171d_0\%\,\#1b1c24_100\%\)\] { background: var(--section-surface) !important; }
+.resume-section:not(.resume-hero) .from-\[\#ff6a3d\] { --tw-gradient-from: var(--section-accent) var(--tw-gradient-from-position) !important; }
+.resume-section:not(.resume-hero) .to-\[\#ff9b6a\] { --tw-gradient-to: color-mix(in srgb, var(--section-accent) 45%, white) var(--tw-gradient-to-position) !important; }
+
+::selection {
+  background: rgba(124, 58, 237, 0.22);
+  color: #1a1a2e;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .hover-lift {
+    transition: transform 200ms ease, border-color 200ms ease, background-color 200ms ease;
+  }
+}
