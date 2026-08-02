@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import {
   Mail,
   Linkedin,
-  Github,
+  Github, 
   Award,
   GraduationCap,
   Briefcase,
@@ -302,14 +302,14 @@ export default function Resume() {
               </div>
               <div className="text-sm font-semibold text-white/60">2024 - 2028</div>
             </div>
-            <div className="grid gap-2 rounded-[24px] border-l-4 border-white/20 bg-white/5 p-4 md:grid-cols-[1fr_auto] md:items-start">
+            <div className="grid gap-2 rounded-3xl border-l-4 border-white/20 bg-white/5 p-4 md:grid-cols-[1fr_auto] md:items-start">
               <div>
                 <h3 className="text-lg font-black text-white">Sri Chaitanya Junior Kalasala</h3>
                 <p className="text-white/70">Intermediate (MPC)</p>
               </div>
               <div className="text-sm font-semibold text-white/60">2022 - 2024</div>
             </div>
-            <div className="grid gap-2 rounded-[24px] border-l-4 border-white/20 bg-white/5 p-4 md:grid-cols-[1fr_auto] md:items-start">
+            <div className="grid gap-2 rounded-3xl border-l-4 border-white/20 bg-white/5 p-4 md:grid-cols-[1fr_auto] md:items-start">
               <div>
                 <h3 className="text-lg font-black text-white">Vijaya Ratna High School</h3>
                 <p className="text-white/70">SSC - Secondary School Education</p>
