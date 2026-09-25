@@ -110,7 +110,7 @@ export default function Resume() {
             <div className="profile-card mx-auto w-full max-w-sm">
               <div className="relative aspect-5/5 overflow-hidden rounded-[300px] border border-slate-200 bg-slate-100">
                 <img
-                  src="/Preetham-photo.jpg"
+                  src="/Preetham-photo.png"
                   alt="Profile placeholder"
                   className="h-full w-full object-cover"
                 />
